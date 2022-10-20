@@ -1,38 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Silkscreen&display=swap');
+@import url('./css/footer.css');
+@import url('./css/nav.css');
+@import url('./css/home.css');
+@import url('./css/cityBuilder.css');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pwd{
+  margin-top: 0.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.title{
+  /* display: flex;
+  width: 30%; */
+  font-family: 'Monoton', cursive;
+  font-size:x-large;
+
+  
+}
+.logo{
+  height: 35px;
+  width: 35px;
+  margin-left: 0.5rem;
+  /* display: flex; */
+  
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+width: 70%;
+margin-top: 4rem;
+font-size: 2em;
+}
+.landing-page{
+  display: flex;
+  
+  
+}
+.btn{
+  color: white;
+  background-color: black;
+  width: 400px;
+  height: 50px;
+  align-self: center;
+  border-radius: 24px;
+  font-size: large;
+  margin-top: 4rem;
+  transition: ease-out 1s;
+  box-shadow: inset 0 0 0 0 whitesmoke;
+}
+.btn:hover{
+  box-shadow: inset 400px 0 0 whitesmoke;
+  color: black;
+  font-size: large;
+}
+.right{
+  position: relative;
+  width: 30% !important;
+  
+}
+.frontcard{
+  width: 100%;
+/* backface-visibility: hidden; */
+
+;
+}
+.backcard{
+  /* position: absolute; */
+  /* backface-visibility: hidden; */
+  transform: rotateY(180 deg);
+}
+
+
+.metapage{
+ position: relative;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.glass{
+  margin-top: 2rem;
+  margin-left: 15em;
+height: 80%;
+width: 60%;
+background: rgba(255, 255, 255, 0.5);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.col .title{
+  font-size: small;
+  /* width: fit-content; */
+}
+.custom_flex {
+  display: flex;
+}
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: absolute;
+  right: 0;
+  top: 0; 
+  width: 100%;
+  height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  left: 3%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 70%;
+  height: 37%;
+  padding: 20px;
+  margin-top: 15%;
+  font-size: x-large;
+  border-radius: 24px;
+}
+
+/* Style the button used to pause/play the video */
+.myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.myBtn:nth-child(1) {
+  background-color: green;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.myBtn:nth-child(2) {
+  background-color: white;
+  color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myBtn:nth-child(1):hover {
+  background-color: white;
+  color: green;
+}
+.myBtn:nth-child(2):hover {
+  background-color: green;
+  color: white;
+}
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top:5px;
 }
