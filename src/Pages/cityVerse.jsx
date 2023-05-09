@@ -11,7 +11,7 @@ const CityVerse =() => {
       </video>
 
       <div class="content">
-        <h1>Welcome to 9ja CityVerse</h1><br/>
+        <h1>Welcome to 9ja CityVerse.</h1><br/>
         <p>Create, explore and trade in the first-ever virtual world owned by its users</p>
         <br />
         <div className='btnDiv'>
